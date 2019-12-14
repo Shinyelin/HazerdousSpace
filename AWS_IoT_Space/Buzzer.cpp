@@ -16,7 +16,8 @@ void Buzzer::init() {
   state = Buzzer_OFF;
 }
 void Buzzer::on() {
-  digitalWrite(pin, HIGH);
+  //digitalWrite(pin, HIGH);
+  tone(pin,440,5000);
   state = Buzzer_ON;
 }
 void Buzzer::off() {

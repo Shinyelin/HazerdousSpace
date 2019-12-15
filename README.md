@@ -9,13 +9,41 @@
 - APP으로 위험공간과 근처 접근하는 사람과의 거리를 파악하고, 경고등과 경고음을 APP을 통해 제어(ON/OFF)할 수 있다.
 - AWS DynamoDB에 저장되어있는 디바이스의 로그 정보를 날짜와 시간을 선택하여 조회할 수 있다.
 
+## 플랫폼 주요 기능
+- __거리감지__
+
+  :초음파 센서를 통해 위험공간과 사람사이의 거리 측정
+
+- __최신상태조회__
+
+  :가장 최근의 device상태를 조회 할 수 있음
+
+- __로그값조회__
+
+  :distance 값에 따라 BUZZER제어를 어떻게 할 것인지 정함
+
+- __이메일 알림__
+
+  : distance 값이 50cm 미만일 경우, 거리값을 알려주는 메일을 보냄
+
+- __경보등 제어__
+
+  : 이벤트 발생 조건에 따라 BUZZER를 제어함
+
+- __경보음 제어__
+
+  :이벤트 발생 조건에 따라 BUZZER를 제어함
+
+
+
 ### 사용된 부품
 - MKRWIFI1010보드
 - 부저
 - LED
 - 초음파센서
 
-## 회로도
+### 회로도
+![프리징](https://user-images.githubusercontent.com/50151242/70861889-c41c9c00-1f77-11ea-9307-894812bdd0de.png)
 
 ### JAVA프로젝트 별 역할
 - __GetDeviceLambdaJavaProject__
@@ -78,4 +106,13 @@
 -__LogAcitivity.java__
 
 : 날짜와 시간을 선택하여 DynamoDB Logging테이블에서 로그값을 가져옴
+
+## APP
+
+### APP 기능
+
+![app_log](https://user-images.githubusercontent.com/50151242/70861896-d8f92f80-1f77-11ea-8fd6-b4f7cd4501b3.png)
+![app_control](https://user-images.githubusercontent.com/50151242/70861897-d991c600-1f77-11ea-9d16-589c95be1816.png)
+![app_main](https://user-images.githubusercontent.com/50151242/70861898-d991c600-1f77-11ea-9ab9-1b94ab2ecfd3.png)
+
 

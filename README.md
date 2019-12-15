@@ -160,4 +160,73 @@ __위험물 관련 사고를 방지하기 위한 플랫폼으로, 사용자가 �
 
   :위험물근처 사람 접근 시 부저로 알람
    부저 ON/OFF 제어 가능
+   
+## 기존코드와 차이점
+    
+### 아두이노
+   
+- __Buzzer 사용__
+ 
+  : APP에서 받아온 ON/OFF값을 토대로 부저를 제어
+
+- __초음파 센서 사용__
+
+  : distance 값 측정
+
+    cm로 변환하여 전송
+   
+![arduino](https://user-images.githubusercontent.com/50151242/70862708-17481c00-1f83-11ea-92f6-72ee86c85e96.png)
+   
+![arduino2](https://user-images.githubusercontent.com/50151242/70862707-17481c00-1f83-11ea-9a01-c3e33733beeb.png)
+
+
+### 안드로이드
+- __MainActivity.java__
+
+  : AWS에서 배포한 URL로 바로 이동할 수 있도록 기존의 코드 수정
+   
+   ![mainactivity](https://user-images.githubusercontent.com/50151242/70862706-17481c00-1f83-11ea-8312-c39818a63fcf.png)
+   
+- __GetThingShadow.java__
+
+  :받아온 LED, Buzzer, distance 값을 보여줄 수 있도록 수정
+
+![getthingshadow](https://user-images.githubusercontent.com/50151242/70862704-16af8580-1f83-11ea-93c0-e4085d3f1dc1.png)
+
+- __DeviceActivity.java__
+
+  : Buzzer 추가
+
+![deviceacitivity](https://user-images.githubusercontent.com/50151242/70862705-17481c00-1f83-11ea-9242-c75597610eb1.png)
+
+- __GetLog.java__
+
+  : Buzzer값을 추가적으로 받아오고, temperature값을 distance값으로 바꿔서 가져옴
+  
+![getlog](https://user-images.githubusercontent.com/50151242/70862713-18794900-1f83-11ea-935b-3908349d4b58.png)
+
+![getlog2](https://user-images.githubusercontent.com/50151242/70862712-18794900-1f83-11ea-9d70-219e0dce8a9f.png)
+
+ ### 자바프로젝트
+   
+- __MonitoringLambda__
+
+  : distance값이 50cm 이내일 경우 메일 전송
+ 
+ ![monitoring](https://user-images.githubusercontent.com/50151242/70862711-17e0b280-1f83-11ea-8d91-7449c0f76f00.png)
+ 
+- __RecordingDeviceDataProject2__
+
+  : Logging테이블에서 저장된 데이터를 가져옴
+  
+![recordingdevice](https://user-images.githubusercontent.com/50151242/70862710-17e0b280-1f83-11ea-895c-9eccaf14f7fd.png)
+
+![db](https://user-images.githubusercontent.com/50151242/70862709-17e0b280-1f83-11ea-991c-5dbf9be09c9d.png)
+
+
+
+
+
+
+
  

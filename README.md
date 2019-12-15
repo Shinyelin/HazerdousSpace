@@ -1,15 +1,17 @@
-# HazerdousSpace
+# HazerdousSpace Management Platform
 
 위험물 안전관리를 위한 플랫폼
 
-## 플랫폼 개요
+### 플랫폼 개요
+
 위험물 관련 사고를 방지하기 위한 플랫폼으로, 사용자가 시각적으로 위험물의 작동여부를 알 수 있고, 청각적으로 위험을 감지할 수 있는 플랫폼이다.
 
 - 위험물이 존재하는 장소에 초음파센서를 설치하여 사람이 다가오는 것을 감지하고, 그 값이 특정거리보다 이내일 경우 지정 이메일로 알람이 가게된다.
 - APP으로 위험공간과 근처 접근하는 사람과의 거리를 파악하고, 경고등과 경고음을 APP을 통해 제어(ON/OFF)할 수 있다.
 - AWS DynamoDB에 저장되어있는 디바이스의 로그 정보를 날짜와 시간을 선택하여 조회할 수 있다.
 
-## 플랫폼 주요 기능
+### 플랫폼 주요 기능
+
 - __거리감지__
 
   :초음파 센서를 통해 위험공간과 사람사이의 거리 측정
@@ -34,8 +36,6 @@
 
   :이벤트 발생 조건에 따라 BUZZER를 제어함
 
-
-
 ### 사용된 부품
 - MKRWIFI1010보드
 - 부저
@@ -46,9 +46,10 @@
 ![프리징](https://user-images.githubusercontent.com/50151242/70861889-c41c9c00-1f77-11ea-9307-894812bdd0de.png)
 
 ### JAVA프로젝트 별 역할
+
 - __GetDeviceLambdaJavaProject__
 
-:
+  :
 
 - __ListingDeviceLambdaJavaProject__
 
@@ -71,6 +72,7 @@
   : 디바이스의 상태 업데이트
 
 ### 아두이노 소스코드
+
 - __AWS_IoT_Space__
 
   : 디바이스를 제어하고 값을 받아오는 주요 코드
@@ -91,6 +93,7 @@
   : certification, ssid, password 설정하는 코드
 
 ### 안드로이드스튜디오 JAVA코드
+
 -__MainAcitivity.java__
 
 : APP의 첫화면, 로그조회버튼과 디바이스 목록이 있음
@@ -112,10 +115,17 @@
 ### APP 기능
 
 - 메인화면
+
 ![app_main](https://user-images.githubusercontent.com/50151242/70861898-d991c600-1f77-11ea-9ab9-1b94ab2ecfd3.png)
+
+
 - 로그값 조회
+
 ![app_log](https://user-images.githubusercontent.com/50151242/70861896-d8f92f80-1f77-11ea-8fd6-b4f7cd4501b3.png)
+
+
 - 최근상태조회 및 제어
+
 ![app_control](https://user-images.githubusercontent.com/50151242/70861897-d991c600-1f77-11ea-9d16-589c95be1816.png)
 
 

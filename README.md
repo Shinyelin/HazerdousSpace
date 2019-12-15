@@ -66,12 +66,15 @@
 -__MainAcitivity.java__
 
 : APP의 첫화면, 로그조회버튼과 디바이스 목록이 있음
+
 -__DeviceAcitivity.java__
 
 : 디바이스를 제어할 수 있으며, 디바이스의 가장 최근 상태를 받아옴
+
 -__ListThingsAcitivity.java__
 
 : 디바이스 목록조회 
+
 -__LogAcitivity.java__
 
 : 날짜와 시간을 선택하여 DynamoDB Logging테이블에서 로그값을 가져옴

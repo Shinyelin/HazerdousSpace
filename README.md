@@ -1,6 +1,6 @@
 # HazerdousSpace Management Platform
 
-##위험물 안전관리를 위한 플랫폼
+## 위험물 안전관리를 위한 플랫폼
 
 ### 플랫폼 개요
 
@@ -51,9 +51,11 @@ __위험물 관련 사고를 방지하기 위한 플랫폼으로, 사용자가 �
 
 ### JAVA프로젝트 별 역할
 
+[https://github.com/Shinyelin/HazerdousSpace/tree/master/JavaProject]
+
 - __GetDeviceLambdaJavaProject__
 
-  :
+  : 디바이스 
 
 - __ListingDeviceLambdaJavaProject__
 
@@ -77,6 +79,8 @@ __위험물 관련 사고를 방지하기 위한 플랫폼으로, 사용자가 �
 
 ### 아두이노 소스코드
 
+[https://github.com/Shinyelin/HazerdousSpace/tree/master/AWS_IoT_Space]
+
 - __AWS_IoT_Space__
 
   : 디바이스를 제어하고 값을 받아오는 주요 코드
@@ -97,6 +101,8 @@ __위험물 관련 사고를 방지하기 위한 플랫폼으로, 사용자가 �
   : certification, ssid, password 설정하는 코드
 
 ### 안드로이드스튜디오 JAVA코드
+
+[https://github.com/Shinyelin/HazerdousSpace/tree/master/Android-RestAPI-master]
 
 -__MainAcitivity.java__
 

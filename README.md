@@ -111,8 +111,12 @@
 
 ### APP 기능
 
-![app_log](https://user-images.githubusercontent.com/50151242/70861896-d8f92f80-1f77-11ea-8fd6-b4f7cd4501b3.png)
-![app_control](https://user-images.githubusercontent.com/50151242/70861897-d991c600-1f77-11ea-9d16-589c95be1816.png)
+- 메인화면
 ![app_main](https://user-images.githubusercontent.com/50151242/70861898-d991c600-1f77-11ea-9ab9-1b94ab2ecfd3.png)
+- 로그값 조회
+![app_log](https://user-images.githubusercontent.com/50151242/70861896-d8f92f80-1f77-11ea-8fd6-b4f7cd4501b3.png)
+- 최근상태조회 및 제어
+![app_control](https://user-images.githubusercontent.com/50151242/70861897-d991c600-1f77-11ea-9d16-589c95be1816.png)
+
 
 
